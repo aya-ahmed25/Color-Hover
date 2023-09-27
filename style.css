@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d6d6d6;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    background-color: #c3c3c3;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    top: 110px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0 11px 1px #909090 inset;
+    animation: run 4s ease-in-out 2;
+}
+
+@keyframes run {
+    from {
+        box-shadow: 0px 0 11px 1px #5e5e5e;
+        transition: 5s;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    to {
+        box-shadow: 0px 0 11px 1px #bebebe;
+        transition: 5s;
+        transform: rotate(180deg);
+    }
+}
+
+.contain:hover {
+    box-shadow: 0px 0px 18px 5px rgb(85, 85, 85);
+    cursor: pointer;
+    border-radius: 21px;
+    transition: .8s;
+
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 90px;
+    height: 400px;
+    margin-left: 10px;
+    left: 20px;
+    top: 25px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.one {
+    background-color: #D6CCC2;
+}
+
+
+.two {
+    background-color: #F5EBE0;
+
+}
+
+
+.three {
+    background-color: #D5BDAF;
+}
+
+
+.four {
+    background-color: #E3D5CA;
+}
+
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    border-radius: 100px;
+    transition: .6s;
+    box-shadow: 0px 0px 18px 5px rgb(71, 71, 71);
+    /* animation: stars 2s ease-in infinite; */
+}
+
+.one:hover {
+    transition: 2s;
+    background-color: #BCA3AC;
+}
+
+.two:hover {
+    transition: 2s;
+    background-color: #E5CEDC;
+}
+
+.three:hover {
+    transition: 2s;
+    background-color: #E6C0E9;
+}
+
+.four:hover {
+    transition: 2s;
+    background-color: #F2D5F8;
+}
+
+.contain:hover {
+    background-color: #c0b2c2;
+    transition: 10S;
+    animation: none;
+}
